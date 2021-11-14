@@ -57,7 +57,7 @@ header a {
 
 /* Header Style End */
 
-/* About Me Style Start */
+/* General Content Style Start */
 .content {
     padding: 30px;
     color: #c8d8e4;
@@ -72,6 +72,9 @@ header a {
     margin: 0 auto 35px auto;
     width: 50%;
 }
+
+/* About Me Style Start */
+
 
 .about-me-content {
     display: flex;
@@ -88,4 +91,32 @@ header a {
 .about-me-content p {
     color: #2a6072;
     font-size: 20px;
+}
+
+/* About Me Style End */
+
+/* My Work Style Start */
+.my-work-content {
+    display: inline-block;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.content-tiles {
+    background-color: #c8d8e4;
+    margin: 20px;
+    padding: 10px;
+    font-size: 26px;
+    color: #2a6072;
+    border: solid 4px;
+    border-radius: 15px;
+}
+
+#run-buddy {
+    background-image: url(../images/run-buddy-background-image.JPG);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
 }
