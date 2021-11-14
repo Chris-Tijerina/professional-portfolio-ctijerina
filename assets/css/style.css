@@ -6,7 +6,7 @@ body {
 /* Header Style Start */
 .header {
     padding: 20px 35px;
-    background-color: #ffffff;
+    background-color: #2a6072;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -21,9 +21,16 @@ body {
     font-weight: bold;
     font-size: 36px;
     color: black;
+    display: inline;
 }
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .header nav {
-    margin: 10px;
+    margin: 10px 0px;
 }
 
 .header nav ul {
@@ -38,6 +45,47 @@ body {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 36px;
+    color: #ffffff;
 }
 
-/*Header Style End*
+.header nav ul li a:hover {
+    background: #ffffff;
+    color: #2a6072;
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+/* Header Style End */
+
+/* About Me Style Start */
+.content {
+    padding: 30px;
+    color: #c8d8e4;
+}
+
+.content h2 {
+    font-size: 30px;
+    color: #2a6072;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.about-me-content {
+    display: flex;
+    flex: wrap;
+    background-color: #c8d8e4;
+
+}
+
+.about-me-content img {
+    max-height: 300px;
+    margin: 20px;
+}
+
+.about-me-content p {
+    color: #2a6072;
+    font-size: 20px;
+}
