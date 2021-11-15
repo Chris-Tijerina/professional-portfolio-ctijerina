@@ -15,6 +15,9 @@ I did some research into effective portfolio design and found similar themes and
 
 I sketched a box model image that looks similar to the finished product to start with and started thinking of the different css elements I would use before I got started. 
 
+![box-sketch-small](https://user-images.githubusercontent.com/90019024/141719809-98b1b5f5-822c-41d6-a6f5-71ace2c36bf5.jpg)
+
+
 Outside of a picture and my name, I knew that I would have 4 different works that I've done and my contact information at the bottom. As far as my contact information is concerned, I left out any information that would normally be part of an application process, such as phone number and address, as including it could be an issue on a publicly available page. 
 
 >When I click one of the links in the navigation then the UI scrolls to the corresponding section
