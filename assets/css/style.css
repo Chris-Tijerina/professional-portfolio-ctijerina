@@ -1,6 +1,7 @@
 body {
     color: #abd1ee;
     font-family: Helvetica, Arial, sans-serif;
+    background-color: #c8d8e4;
 }
 
 /* Header Style Start */
@@ -20,7 +21,7 @@ body {
 .header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #52ab98;
+    color: #f2f2f2;
     display: inline;
 }
 
@@ -87,7 +88,9 @@ header a {
 .about-me-content {
     display: flex;
     flex: wrap;
-    background-color: #c8d8e4;
+    background-color: #2a6072;
+    border: solid 4px #2a6072;
+    border-radius: 15px;
 
 }
 
@@ -97,13 +100,14 @@ header a {
 }
 
 .about-me-content p {
-    color: #2a6072;
+    color: #f2f2f2;
     font-size: 20px;
 }
 
 /* About Me Style End */
 
 /* My Work Style Start */
+
 .my-work-content {
     display: inline-block;
     margin-left: 20px;
@@ -163,8 +167,28 @@ header a {
     border-radius: 10px;
 }
 
+/* My Work Style End */
+
+/* Contact Info Style End */
+
 .contact-links {
     display: flex;
     justify-content: space-between;
     font-size: 26px;
 }
+
+.contact-links a {
+    border: solid 4px;
+    border-radius: 15px;
+    width: 25%;
+    text-align: center;
+    background-color: #2a6072;
+    color: #f2f2f2; 
+}
+
+.contact-links :hover {
+    box-shadow: 0px 0px 50px rgb(82 171 152 / 100%);
+    border-radius: 15px;
+}
+
+/* Contact Info Style End */
