@@ -1,5 +1,5 @@
 body {
-    color: #c8d8e4;
+    color: #abd1ee;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 .header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: black;
+    color: #52ab98;
     display: inline;
 }
 
@@ -67,12 +67,20 @@ header a {
     font-size: 30px;
     color: #2a6072;
     border-bottom: 3px solid;
-    padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 35px auto;
+    margin: 0 auto 10px auto;
     width: 50%;
 }
 
+#my-work h3 {
+    border: solid 4px;
+    border-radius: 15px;
+    width: 25%;
+    text-align: center;
+    background-color: #2a6072;
+    color: #f2f2f2;
+    position: absolute;  
+}
 /* About Me Style Start */
 
 
@@ -107,16 +115,56 @@ header a {
 .content-tiles {
     background-color: #c8d8e4;
     margin: 20px;
-    padding: 10px;
     font-size: 26px;
     color: #2a6072;
     border: solid 4px;
     border-radius: 15px;
 }
 
-#run-buddy {
+.content-tiles :hover {
+    box-shadow: 0px 0px 50px rgb(82 171 152 / 100%);
+    border-radius: 15px;
+}
+
+#buddy-image {
     background-image: url(../images/run-buddy-background-image.JPG);
+    display: block;
     background-size: cover;
     background-position: center;
     height: 500px;
+    border-radius: 10px;
+}
+
+
+#horiseon-image {
+    background-image: url(../images/horiseon-code-refactor-background.JPG);
+    display: block;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    border-radius: 10px;
+} 
+
+#password-image {
+    background-image: url(../images/keyboard\ image\ \(blue\).jpeg);
+    display: block;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#gladiators-image {
+    background-image: url(../images/robot-gladiators-js.JPG);
+    display: block;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 26px;
 }
