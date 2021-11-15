@@ -73,7 +73,7 @@ header a {
 .content {
     padding: 30px;
     color: var(--tertiary-color);
-    scroll-margin-top: 2;
+    scroll-margin-top: 150px;
 }
 
 .content h2 {
