@@ -1,13 +1,24 @@
-body {
-    color: #abd1ee;
-    font-family: Helvetica, Arial, sans-serif;
-    background-color: #c8d8e4;
+/* Page Style Start */
+:root {
+    --primary-color:#2a6072;
+    --secondary-color:#f2f2f2;
+    --tertiary-color:#c8d8e4;
+    --quarternary-color: #abd1ee;
 }
+
+
+body {
+    color: var(--quarternary-color);
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--tertiary-color);
+}
+
+/* Page Style End */
 
 /* Header Style Start */
 .header {
     padding: 20px 35px;
-    background-color: #2a6072;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -21,13 +32,13 @@ body {
 .header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #f2f2f2;
+    color: var(--secondary-color);
     display: inline;
 }
 
 header a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .header nav {
@@ -46,12 +57,12 @@ header a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 36px;
-    color: #ffffff;
+    color: var(--secondary-color);
 }
 
 .header nav ul li a:hover {
-    background: #ffffff;
-    color: #2a6072;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     border-radius: 15px;
     text-shadow: none;
 }
@@ -61,12 +72,13 @@ header a {
 /* General Content Style Start */
 .content {
     padding: 30px;
-    color: #c8d8e4;
+    color: var(--tertiary-color);
+    scroll-margin-top: 2;
 }
 
 .content h2 {
-    font-size: 30px;
-    color: #2a6072;
+    font-size: 36px;
+    color: var(--primary-color);
     border-bottom: 3px solid;
     text-align: center;
     margin: 0 auto 10px auto;
@@ -78,30 +90,28 @@ header a {
     border-radius: 15px;
     width: 25%;
     text-align: center;
-    background-color: #2a6072;
-    color: #f2f2f2;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     position: absolute;  
 }
 /* About Me Style Start */
 
-
-.about-me-content {
+.about-me {
     display: flex;
     flex: wrap;
-    background-color: #2a6072;
-    border: solid 4px #2a6072;
+    background-color: var(--primary-color);
+    border: solid 4px var(--primary-color);
     border-radius: 15px;
-
 }
 
-.about-me-content img {
+.about-me img {
     max-height: 300px;
     margin: 20px;
 }
 
-.about-me-content p {
-    color: #f2f2f2;
-    font-size: 20px;
+.about-me p {
+    color: var(--secondary-color);
+    font-size: 26px;
 }
 
 /* About Me Style End */
@@ -117,10 +127,10 @@ header a {
 }
 
 .content-tiles {
-    background-color: #c8d8e4;
+    background-color: var(--tertiary-color);
     margin: 20px;
     font-size: 26px;
-    color: #2a6072;
+    color: var(--primary-color);
     border: solid 4px;
     border-radius: 15px;
 }
@@ -130,41 +140,28 @@ header a {
     border-radius: 15px;
 }
 
-#buddy-image {
-    background-image: url(../images/run-buddy-background-image.JPG);
-    display: block;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    border-radius: 10px;
-}
-
-
-#horiseon-image {
-    background-image: url(../images/horiseon-code-refactor-background.JPG);
+.content-tiles a {
     display: block;
     background-size: cover;
     background-position: center;
     height: 150px;
     border-radius: 10px;
+}
+#buddy-image {
+    background-image: url(../images/run-buddy-background-image.JPG);
+    height: 500px;
+}
+
+#horiseon-image {
+    background-image: url(../images/horiseon-code-refactor-background.JPG);
 } 
 
 #password-image {
     background-image: url(../images/keyboard\ image\ \(blue\).jpeg);
-    display: block;
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    border-radius: 10px;
 }
 
 #gladiators-image {
     background-image: url(../images/robot-gladiators-js.JPG);
-    display: block;
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    border-radius: 10px;
 }
 
 /* My Work Style End */
@@ -175,6 +172,8 @@ header a {
     display: flex;
     justify-content: space-between;
     font-size: 26px;
+    margin: 20px;
+    padding:10px;
 }
 
 .contact-links a {
@@ -182,8 +181,8 @@ header a {
     border-radius: 15px;
     width: 25%;
     text-align: center;
-    background-color: #2a6072;
-    color: #f2f2f2; 
+    background-color: var(--primary-color);
+    color: var(--secondary-color); 
 }
 
 .contact-links :hover {
