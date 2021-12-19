@@ -147,9 +147,14 @@ header a {
     height: 150px;
     border-radius: 10px;
 }
+
+#night-sky-image {
+    background-image: url(../images/my-night-sky-splash.png);
+    height: 500px;
+}
+
 #buddy-image {
     background-image: url(../images/run-buddy-background-image.JPG);
-    height: 500px;
 }
 
 #horiseon-image {
